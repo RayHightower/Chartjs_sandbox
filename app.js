@@ -6,7 +6,8 @@ let myBarChart=new Chart(ctx1,{
         labels:["Jan", "Feb", "Mar"],
         datasets:[{
             label:"Temperature",
-            data:[12, 15, 18]
+            data:[12, 15, 18],
+            backgroundColor:["red", "green", "blue"]
         }]
     }
 });
