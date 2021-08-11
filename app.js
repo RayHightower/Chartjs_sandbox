@@ -9,5 +9,15 @@ let myBarChart=new Chart(ctx1,{
             data:[12, 15, 18],
             backgroundColor:["red", "green", "blue"]
         }]
+    },
+    options:{
+        responsive:false,
+        scales:{
+            yAxes:[{
+                ticks:{
+                    beginAtZero:true
+                }
+            }]
+        }
     }
 });
