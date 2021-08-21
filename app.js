@@ -95,11 +95,11 @@ let myLineChart=new Chart(ctx4,{
 let myRadarChart=new Chart(ctx5,{
     type:"radar",
     data:{
-        labels:["Jan", "Feb", "Mar"],
+        labels:["Red", "Green", "Blue", "Yellow", "Orange"],
         datasets:[{
-            label:"Temperature",
-            data:[12, 15, 18],
-            backgroundColor:["red", "green", "blue"]
+            label:"Random Radar Data",
+            data:[12, 15, 18, 6, 3, 5],
+            backgroundColor:["red", "green", "blue", "yellow", "orange"]
         }]
     },
     options:{
