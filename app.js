@@ -51,11 +51,11 @@ let myPieChart=new Chart(ctx2,{
 let myDoughnutChart=new Chart(ctx3,{
     type:"doughnut",
     data:{
-        labels:["Jan", "Feb", "Mar"],
+        labels:["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
         datasets:[{
-            label:"Temperature",
-            data:[12, 15, 18],
-            backgroundColor:["red", "green", "blue"]
+            label:"Market Share",
+            data:[12, 15, 18, 2, 23, 4],
+            backgroundColor:["red", "green", "blue", "orange", "yellow", "turquoise"]
         }]
     },
     options:{
