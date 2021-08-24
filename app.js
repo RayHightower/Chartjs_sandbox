@@ -7,11 +7,11 @@ let ctx5=document.getElementById("myRadarChart").getContext("2d");
 let myBarChart=new Chart(ctx1,{
     type:"bar",
     data:{
-        labels:["Jan", "Feb", "Mar"],
+        labels:["Jan", "Feb", "Mar", "Apr"],
         datasets:[{
             label:"Temperature",
-            data:[12, 15, 18],
-            backgroundColor:["red", "green", "blue"]
+            data:[12, 15, 18, 8],
+            backgroundColor:["red", "green", "blue", "orange"]
         }]
     },
     options:{
@@ -107,7 +107,7 @@ let myRadarChart=new Chart(ctx5,{
         scales:{
             yAxes:[{
                 ticks:{
-                    beginAtZero:true
+                    beginAtZero:false
                 }
             }]
         }
