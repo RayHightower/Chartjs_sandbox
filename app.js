@@ -3,6 +3,7 @@ let ctx2=document.getElementById("myPieChart").getContext("2d");
 let ctx3=document.getElementById("myDoughnutChart").getContext("2d");
 let ctx4=document.getElementById("myLineChart").getContext("2d");
 let ctx5=document.getElementById("myRadarChart").getContext("2d");
+let ctx6=document.getElementById("myBubbleChart").getContext("2d");
 
 let myBarChart=new Chart(ctx1,{
     type:"bar",
@@ -98,6 +99,28 @@ let myRadarChart=new Chart(ctx5,{
         labels:["Red", "Green", "Blue", "Yellow", "Orange"],
         datasets:[{
             label:"Random Radar Data",
+            data:[12, 15, 18, 6, 3, 5],
+            backgroundColor:["red", "green", "blue", "yellow", "orange"]
+        }]
+    },
+    options:{
+        responsive:false,
+        scales:{
+            yAxes:[{
+                ticks:{
+                    beginAtZero:false
+                }
+            }]
+        }
+    }
+});
+
+let myBubbleChart=new Chart(ctx6,{
+    type:"bubble",
+    data:{
+        labels:["Red", "Green", "Blue", "Yellow", "Orange"],
+        datasets:[{
+            label:"Random Bubble Data",
             data:[12, 15, 18, 6, 3, 5],
             backgroundColor:["red", "green", "blue", "yellow", "orange"]
         }]
