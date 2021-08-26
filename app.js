@@ -96,11 +96,18 @@ let myLineChart=new Chart(ctx4,{
 let myRadarChart=new Chart(ctx5,{
     type:"radar",
     data:{
-        labels:["Red", "Green", "Blue", "Yellow", "Orange"],
+        labels:["Red", "Green", "Blue", "Yellow", "Orange", "Red-Green"],
         datasets:[{
             label:"Random Radar Data",
             data:[12, 15, 18, 6, 3, 5],
-            backgroundColor:["red", "green", "blue", "yellow", "orange"]
+            backgroundColor:[
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
         }]
     },
     options:{
