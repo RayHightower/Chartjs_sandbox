@@ -30,9 +30,9 @@ let myBarChart=new Chart(ctx1,{
 let myPieChart=new Chart(ctx2,{
     type:"pie",
     data:{
-        labels:["Jan", "Feb", "Mar"],
+        labels:["Larry", "Moe", "Curly"],
         datasets:[{
-            label:"Temperature",
+            label:"Pie Percentage",
             data:[12, 15, 18],
             backgroundColor:[
                 'rgba(255, 99, 132, 0.5)',
@@ -56,9 +56,9 @@ let myPieChart=new Chart(ctx2,{
 let myDoughnutChart=new Chart(ctx3,{
     type:"doughnut",
     data:{
-        labels:["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        labels:["Chicago", "Los Angeles", "Phoenix", "Denver", "Dallas", "Atlanta"],
         datasets:[{
-            label:"Market Share",
+            label:"% of Sales Volume",
             data:[12, 15, 18, 2, 23, 4],
             backgroundColor:[
                 'rgba(255, 99, 132, 0.2)',
@@ -107,9 +107,9 @@ let myLineChart=new Chart(ctx4,{
 let myRadarChart=new Chart(ctx5,{
     type:"radar",
     data:{
-        labels:["Red", "Green", "Blue", "Yellow", "Orange", "Red-Green"],
+        labels:["Mind", "Body", "Spirit", "Finances", "Relationships", "Artistry"],
         datasets:[{
-            label:"Random Radar Data",
+            label:"Live Balance Radar Chart",
             data:[12, 15, 18, 6, 3, 5],
             backgroundColor:[
                 'rgba(255, 99, 132, 0.2)',
