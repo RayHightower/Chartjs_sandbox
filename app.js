@@ -133,16 +133,40 @@ let myRadarChart=new Chart(ctx5,{
     }
 });
 
+const data = { /* for the Bubble Chart */
+    datasets: [{
+      label: 'Experimental Bubble Chart',
+      data: [{
+        x: 20,
+        y: 30,
+        r: 15
+      }, 
+      {
+        x: 40,
+        y: 10,
+        r: 10
+      },
+      {
+        x: 34,
+        y: 19,
+        r: 21
+      },{
+        x: 24,
+        y: 29,
+        r: 10
+      },
+      {
+        x: 30,
+        y: 15,
+        r: 25
+      }],
+      backgroundColor: 'rgb(255, 99, 132)'
+    }]
+  };
+
 let myBubbleChart=new Chart(ctx6,{
     type:"bubble",
-    data:{
-        labels:["Red", "Green", "Blue", "Yellow", "Orange"],
-        datasets:[{
-            label:"Random Bubble Data",
-            data:[12, 15, 18, 6, 3, 5],
-            backgroundColor:["red", "green", "blue", "yellow", "orange"]
-        }]
-    },
+    data: data,
     options:{
         responsive:false,
         scales:{
