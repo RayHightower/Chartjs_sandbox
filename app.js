@@ -85,11 +85,11 @@ let myDoughnutChart=new Chart(ctx3,{
 let myLineChart=new Chart(ctx4,{
     type:"line",
     data:{
-        labels:["Jan", "Feb", "Mar"],
+        labels:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
         datasets:[{
             label:"Temperature",
-            data:[12, 15, 18],
-            backgroundColor:["red", "green", "blue"]
+            data:[12, 15, 18, 4, 2, 5, 9, 21],
+            backgroundColor:["red", "green", "blue", "red", "green", "blue", "red", "green"]
         }]
     },
     options:{
